@@ -8,17 +8,17 @@ const sendPage = (request, response, page) => {
   response.writeHead(200, { 'Content-Type': 'text/html' });
   response.write(page);
   response.end();
-}
+};
 
 const getIndex = (request, response) => {
   sendPage(request, response, index);
 };
 const getPage2 = (request, response) => {
   sendPage(request, response, page2);
-}
+};
 const getPage3 = (request, response) => {
   sendPage(request, response, page3);
-}
+};
 module.exports = {
   getIndex,
   getPage2,
